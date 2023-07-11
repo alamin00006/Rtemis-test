@@ -17,10 +17,12 @@
 }
 .title-search li span {
   padding: 4px 20px;
-  border-bottom: 1px solid #00bbb4;
   color: black;
   margin: 5px;
   cursor: pointer;
+}
+.active {
+  border-bottom: 1.5px solid #00bbb4;
 }
 
 /* input filed Area */

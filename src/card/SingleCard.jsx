@@ -3,6 +3,7 @@ import house2 from "../images/house2.jpg";
 import { AiTwotoneStar } from "react-icons/ai";
 import { MdOutlineLocationOn } from "react-icons/md";
 import { AiOutlineShoppingCart } from "react-icons/ai";
+import { GiSelfLove } from "react-icons/gi";
 import { BsPerson } from "react-icons/bs";
 const SingleCard = ({ rent }) => {
   return (
@@ -37,12 +38,15 @@ const SingleCard = ({ rent }) => {
                 <span className="fw-bold">Per Year </span>: BDT 1000000
               </p>
             </span>
-            <div>
+            <div className="d-flex justify-content-between">
               <div>
                 <BsPerson style={{ color: "#00bbb4" }} /> 4
                 <AiOutlineShoppingCart
                   style={{ color: "#00bbb4", marginLeft: "5px" }}
                 />
+              </div>
+              <div>
+                <GiSelfLove style={{ width: "20px", height: "20px" }} />
               </div>
             </div>
           </Card.Body>

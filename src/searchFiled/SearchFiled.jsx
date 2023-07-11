@@ -7,7 +7,7 @@ import { useQuery } from "react-query";
 
 const SearchFiled = () => {
   const [rent, setRent] = useState("All");
-
+  const [value, setValue] = useState("");
   const rents = [
     "All",
     "Hotel",
@@ -47,7 +47,12 @@ const SearchFiled = () => {
             <ul className="d-flex title-search">
               {rents.map((rent, index) => (
                 <li key={index} onClick={() => setRent(rent)}>
-                  <span>{rent}</span>
+                  <span
+                    onClick={() => setValue(index)}
+                    className={`${value === index ? "active" : ""}`}
+                  >
+                    {rent}
+                  </span>
                 </li>
               ))}
             </ul>
