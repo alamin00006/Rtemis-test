@@ -22,3 +22,65 @@
   margin: 5px;
   text-decoration: none;
 }
+
+/* input filed Area */
+input {
+  border: 1px solid #00bbb4 !important;
+}
+input:focus {
+  outline: 1px solid #00bbb4 !important;
+}
+
+.input-filed-area {
+  position: relative;
+}
+.location-icon {
+  position: absolute;
+  top: 4px;
+  left: 15px;
+}
+.left-date {
+  position: absolute;
+  top: 6px;
+  right: 230px;
+}
+.left-date input {
+  border: none !important;
+}
+.left-date input:focus {
+  outline: none !important;
+}
+.right-date {
+  position: absolute;
+  top: 6px;
+  right: 40px;
+}
+.right-date input {
+  border: none !important;
+}
+.right-date input:focus {
+  outline: none !important;
+}
+.vl {
+  border-left: 2px solid #00bbb4;
+  height: 40px;
+  position: absolute;
+  top: 0px;
+  left: 290px;
+}
+.arrow-icon {
+  position: absolute;
+  top: 6px;
+  right: 200px;
+}
+/* Styled Searching */
+.styled-search-1 li {
+  list-style: none;
+}
+.styled-search-1 li a {
+  padding: 4px 20px;
+  background-color: #00bbb4;
+  color: black;
+  margin: 5px;
+  text-decoration: none;
+}
