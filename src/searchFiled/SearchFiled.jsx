@@ -23,7 +23,7 @@ const SearchFiled = () => {
     isLoading,
     refetch,
   } = useQuery([rent], () =>
-    fetch(`http://localhost:5000/api/v1/rent?query=${rent}`, {
+    fetch(`https://rtemis-backend-part.vercel.app/api/v1/rent?query=${rent}`, {
       method: "GET",
     }).then((res) => res.json())
   );
