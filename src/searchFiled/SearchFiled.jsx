@@ -7,7 +7,7 @@ import { useQuery } from "react-query";
 
 const SearchFiled = () => {
   const [rent, setRent] = useState("All");
-  const [value, setValue] = useState("0");
+  const [value, setValue] = useState(0);
   const rents = [
     "All",
     "Hotel",
